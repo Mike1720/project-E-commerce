@@ -1,0 +1,29 @@
+$mainColor: #000000;
+$buttonColor: #808080;
+$fontColor: #F1F2F0;
+$backgroundColor: #CDCDCD;
+
+$brand-font: "Inter";
+$regular-font: "Outfit";
+.home {
+
+  display: grid;
+  grid-template-rows: 100px 1fr;
+
+  &__greeting {
+    margin-top: 10px;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__list-products {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 15px;
+  }
+}

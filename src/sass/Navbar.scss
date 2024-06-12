@@ -1,0 +1,79 @@
+$mainColor: #000000;
+$buttonColor: #808080;
+$fontColor: #F1F2F0;
+$backgroundColor: #CDCDCD;
+
+$brand-font: "Inter";
+$regular-font: "Outfit";
+
+.navbar {
+  background-color: $mainColor;
+  height: 80px;
+
+  &__logo {
+
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    text-decoration: none;
+    padding: 0 30px;
+
+    &-img {
+      height: 40px;
+    }
+
+    &-title {
+      color: $fontColor;
+      font-family: $brand-font;
+      font-size: 25px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 35%;
+
+    &-input {
+      border: 1px solid $fontColor;
+      height: 35px;
+      width: 100%;
+      background-color: transparent;
+      border-radius: 50px;
+      padding: 0 15px;
+      color: $fontColor;
+
+      &::placeholder {
+        color: $fontColor;
+      }
+    }
+
+    &-button {
+      position: absolute;
+      right: 10px;
+      background-color: transparent;
+      border: none;
+
+      &-img {
+        height: 30px;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin: 0;
+    column-gap: 15px;
+
+    &-item-link {
+      text-decoration: none;
+      color: $fontColor;
+    }
+  }
+}

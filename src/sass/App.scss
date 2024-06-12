@@ -1,0 +1,21 @@
+$backgroundColor: #CDCDCD;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+  background-color: $backgroundColor;
+
+}
+
+.main {
+  min-height: calc(100vh - 80px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
